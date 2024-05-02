@@ -1,0 +1,111 @@
+.title {
+  padding-bottom: 30px;
+
+  text-transform: capitalize;
+  color: #00aeef;
+  font-size: 43px;
+  font-weight: 700;
+}
+
+.subtitle {
+  width: 50%;
+  margin: 0 auto;
+  padding-bottom: 30px;
+
+  line-height: 1.5;
+  color: #ccc;
+}
+
+.trainers_head {
+  margin-top: 180px;
+
+  position: relative;
+
+  text-align: center;
+}
+
+.trainers_head:after {
+  content: "";
+  width: 40%;
+  height: 1px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.04) 0%,
+    rgba(255, 255, 255, 0.2) 48.42%,
+    rgba(255, 255, 255, 0.04) 100%
+  );
+}
+
+.all-trainers {
+  padding: 80px 0;
+
+  color: #1d2229;
+}
+
+.trainers-text {
+  margin-bottom: 30px;
+
+  text-align: center;
+}
+
+.classes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 30px;
+}
+
+.classes_item {
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #0d0d0d;
+}
+
+.classes_box {
+  padding: 20px;
+}
+
+.classes_item img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.classes h3 {
+  color: #fff;
+}
+
+.classes p {
+  height: 100%;
+  width: 80%;
+  margin: 20px 0;
+
+  color: #6a6a6a;
+}
+
+.classes ul li {
+  margin-bottom: 20px;
+}
+
+.classes a {
+  color: #00aeef;
+}
+
+@media (max-width: 800px) {
+  .classes {
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-section h1 {
+    font-size: 30px;
+  }
+
+  .classes {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}
